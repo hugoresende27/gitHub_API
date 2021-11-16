@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+:root
+{
+   --primary-cor:#fff;
+   --secondary-cor:#fff;
+   --three-cor:#2c3e50;
+}
+
+
+body
+{
+    background-color: purple;
+    /*background-image: linear-gradient(90deg, var(--three-cor), #384657);*/
+    font-family: 'Inconsolata',sans-serif;
+    font-weight: 900;
+    display: flex;          /*coloca tudo em linha*/
+    flex-direction: column; /*coloca tudo em coluna*/
+    align-items: center;    /*alinha horizontalmente*/
+    justify-content: center;/*alinha tudo verticalmente com uso de height:100vh*/
+    height: 100vh;
+    overflow: hidden; /*BARRA DE SCROLL DOWN, HIDDEN ESCONDIDA*/
+    margin: 0;
+    overflow-x: hidden; /*REMOVER BARRA DE SCROLL HORIZONTAL*/
+}
+
+
+
+@media(max-width: 480px)        /*para ecras mais pequenos*/
+{
+    body{
+        overflow:visible;
+    }
+
+    footer 
+    {
+        /* display: none; */
+    };
+
+}
+
+@media (max-width: 800px)
+{
+    body{
+        overflow:visible;
+    }
+    footer 
+    {
+        /* display: none; */
+    };
+  
+
+}
+
+
+/*estilos do footer */
+
+footer{
+    font-size: 0.8rem;
+    color: var(--primary-cor);
+    font-family:'Inconsolata',sans-serif ;
+    text-align: center;
+    /* border-top: 1px dashed; */
+    position: absolute;
+    bottom: .5rem;
+    transform: translate(-0%, -0%);
+    
+}
+
+footer a{
+   color: var(--primary-cor);  /*cor dos links a preto*/
+   text-decoration: none;     /*retira o sublinhado dos links*/
+  
+}
+
+footer a:hover{
+    color: rgb(25, 235, 95);
+}
+
+
+
+
